@@ -17,7 +17,7 @@ def Add():
     en.delete(0, END)
     global cnt
     global phrase 
-    cnt = int(num)
+    cnt = float(num)
     phrase = "+"
 
 def Clear():
@@ -27,20 +27,20 @@ def Equal():
     sec_number = en.get()
     en.delete(0, END)
     if phrase == "+":
-        en.insert(0, int(cnt) + int(sec_number))
+        en.insert(0, float(cnt) + float(sec_number))
     elif phrase == "-":
-        en.insert(0, int(cnt) - int(sec_number))
+        en.insert(0, float(cnt) - float(sec_number))
     elif phrase == "x":
-        en.insert(0, int(cnt) * int(sec_number))
+        en.insert(0, float(cnt) * float(sec_number))
     elif phrase == "/":
-        en.insert(0, float(int(cnt)/int(sec_number)))
+        en.insert(0, float(int(cnt)/float(sec_number)))
 
 def Subs():
     num = en.get()
     en.delete(0, END)
     global cnt
     global phrase 
-    cnt = int(num)
+    cnt = float(num)
     phrase = "-"
 
 def Divide():
@@ -48,7 +48,7 @@ def Divide():
     en.delete(0, END)
     global cnt
     global phrase 
-    cnt = int(num)
+    cnt = float(num)
     phrase = "/"
 
 def Multiply():
@@ -56,7 +56,7 @@ def Multiply():
     en.delete(0, END)
     global cnt
     global phrase 
-    cnt = int(num)
+    cnt = float(num)
     phrase = "x"
 
 Butt1 = Button(root, text = "1", padx = 40, pady = 40, command=lambda: Butt(1))
