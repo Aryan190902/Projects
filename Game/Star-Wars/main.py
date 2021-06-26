@@ -146,7 +146,7 @@ while running:
     #Enemy's movement 
     for i in range(num_of_enemy):
         #Game Over
-        if enemyY[i] >= 635:
+        if enemyY[i] >= 636:
             strike += 1
 
         if strike >= 3:
